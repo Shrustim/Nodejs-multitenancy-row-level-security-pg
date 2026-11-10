@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-multitenancy-rls-practice",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test",
+    "token:alice": "node scripts/make-token.js alice",
+    "token:bob": "node scripts/make-token.js bob",
+    "token:charlie": "node scripts/make-token.js charlie"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3"
+  }
+}
